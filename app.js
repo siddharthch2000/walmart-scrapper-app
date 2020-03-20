@@ -42,7 +42,7 @@ app.use(methodOverride('_method'));
 
 app.use(flash());
 
-//global middleware
+//global  middleware
 app.use((req,res,next)=>{
     res.locals.success_msg = req.flash(('success_msg'));
     res.locals.error_msg = req.flash(('error_msg'));
